@@ -396,3 +396,51 @@
     .tab1 { order: 1; }
     .content1 { order: 2; }
 }
+/*Transition*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------*/
+.transition{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+    will-change: transform, opacity;
+    transition-delay: 0.3s;
+}
+.transition.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.fadeIn{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.3s ease-out;
+    will-change: transform, opacity;
+    transition-delay: 0.3s;
+}
+.fadeIn.active{
+    opacity: 1;
+    transform: scale(1);
+}
+.fadeLeft{
+    opacity: 0;
+    transform: translateX(90px);
+    transition: all 0.5s ease-out;
+    will-change: transform, opacity;
+    transition-delay: 0.3s;
+}
+.fadeLeft.active{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.fadeRight{
+    opacity: 0;
+    transform: translateX(-90px);
+    transition: all 0.5s ease-out;
+    will-change: transform, opacity;
+    transition-delay: 0.3s;
+}
+.fadeRight.active{
+    opacity: 1;
+    transform: translateX(0px);
+}
