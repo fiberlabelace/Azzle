@@ -1,0 +1,95 @@
+:root{
+    --bs-theme-orange: 254, 51, 10;
+}
+
+.streamline .container{
+    background: black;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: black;
+}
+
+.nav-link{
+    color: black;
+}
+
+
+.cost .card:hover{
+    background-color: black;
+    color: white;
+    transition: all 1s;
+}
+
+.cost .card{
+    transition: all 1s;
+    border-radius: 15px;
+}
+
+.cost .card .btn:hover{
+    background-color: #FE330A;
+    transition: all 1s;
+    cursor: pointer;
+    /*animation: fade-down 1.5s;*/
+
+}
+
+.cost .card .btn{
+    transition: all 1s;
+}
+
+/* @keyframes fade-down {
+  /*fade=down: tên keyframe, đặt gì cũng đc miễm ngắn dễ đọc hiểu
+  0% {
+    transform: translateY(0px); /*trạng thái from-ít dùng từ from, dùng %
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(60px); /*trạng thái to-ít dùng từ to, dùng %
+    opacity: 1;
+  }
+} */
+
+
+
+.ask .btn:hover{
+    background-color: #FE330A;
+    transition: all 1s;
+    cursor: pointer;
+    /*animation: fade-down 1.5s;*/
+
+}
+
+.ask .btn{
+    transition: all 1s;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/img/plus.png);
+    transform: rotate(45deg);
+}
+
+.accordion-button::after{
+    background-image: url(/img/plus.png);
+}
+
+
+.footer .wording {
+  /*animation: scrollText 2s infinite;*/
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  white-space: nowrap;
+  animation: scrollText 15s linear infinite;
+}
