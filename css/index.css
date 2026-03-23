@@ -8,6 +8,12 @@
     margin-bottom: 20px; 
 }
 
+.streamline .btn:hover{
+  background-color: #FE330A;
+    color: white;
+    transition: all 1s;
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: black;
 }
@@ -21,6 +27,10 @@
     background-color: black;
     color: white;
     transition: all 1s;
+}
+.cost .card:hover .btn-outline-dark {
+  color: white;
+  border-color: #FE330A;
 }
 
 .cost .card{
@@ -75,21 +85,36 @@
     background-image: url(/img/plus.png);
 }
 
-
-.footer .wording {
-  /*animation: scrollText 2s infinite;*/
+/*animation wording*/
+.wording {
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-@keyframes scrollText {
+.wording-content {
+  display: inline-flex;
+  gap: 40px;
+  animation: scroll 10s linear infinite;
+}
+
+.wording-content span {
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.wording-content img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Animation */
+@keyframes scroll {
   from {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-33.3%);
   }
-}
-
-.marquee {
-  white-space: nowrap;
-  animation: scrollText 15s linear infinite;
 }
