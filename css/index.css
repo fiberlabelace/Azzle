@@ -1,11 +1,33 @@
-:root{
-    --bs-theme-orange: 254, 51, 10;
+:root {
+  --bs-cream: #efeae3;
+  --bs-orange: #fe330a;
+
+  .text-orange {
+  color: var(--bs-orange);}
+
+  .bg-orange{
+    background-color: var(--bs-orange) ;
+  }
+  .bg-cream{
+    background-color: var(--bs-cream) ;
+  }
+  .text-cream {
+  color: var(--bs-cream);
 }
+  
+}
+
 
 .streamline .container{
     background: black;
     margin-top: 20px;
     margin-bottom: 20px; 
+}
+
+.streamline .btn:hover{
+  background-color: #FE330A;
+    color: white;
+    transition: all 1s;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
@@ -22,43 +44,35 @@
     color: white;
     transition: all 1s;
 }
+.cost .card:hover .btn-outline-dark {
+  color: white;
+  border-color: #FE330A;
+}
 
 .cost .card{
     transition: all 1s;
     border-radius: 15px;
 }
 
+.cost .nav-link:hover{
+  color: var(--bs-orange);
+}
+
 .cost .card .btn:hover{
     background-color: #FE330A;
     transition: all 1s;
     cursor: pointer;
-    /*animation: fade-down 1.5s;*/
-
 }
 
 .cost .card .btn{
     transition: all 1s;
 }
 
-/* @keyframes fade-down {
-  /*fade=down: tên keyframe, đặt gì cũng đc miễm ngắn dễ đọc hiểu
-  0% {
-    transform: translateY(0px); /*trạng thái from-ít dùng từ from, dùng %
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(60px); /*trạng thái to-ít dùng từ to, dùng %
-    opacity: 1;
-  }
-} */
-
-
 
 .ask .btn:hover{
     background-color: #FE330A;
     transition: all 1s;
     cursor: pointer;
-    /*animation: fade-down 1.5s;*/
 
 }
 
@@ -75,21 +89,57 @@
     background-image: url(/img/plus.png);
 }
 
-
-.footer .wording {
-  /*animation: scrollText 2s infinite;*/
+.feedback i{
+  color: var(--bs-orange)
 }
 
-@keyframes scrollText {
+/*animation wording*/
+.wording {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.wording-content {
+  display: inline-flex;
+  gap: 40px;
+  animation: scroll 10s linear infinite;
+}
+
+.wording-content span {
+  display: flex;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.wording-content img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Animation */
+@keyframes scroll {
   from {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-33.3%);
   }
 }
 
-.marquee {
-  white-space: nowrap;
-  animation: scrollText 15s linear infinite;
+.footer-navbar a:hover{
+    color: #FE330A !important; 
+    transition: all 0.6s;
+}
+.footer-navbar a{
+    transition: all 0.6s;
+}
+
+.footer .subscribe button:hover{
+  background-color:#FE330A !important;
+  transition: all 0.6s;
+}
+
+.footer .subscribe button{
+    transition: all 0.6s;
 }
