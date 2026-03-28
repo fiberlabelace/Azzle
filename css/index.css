@@ -81,12 +81,12 @@
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(/img/plus.png);
+    background-image: url(img/plus.png);
     transform: rotate(45deg);
 }
 
 .accordion-button::after{
-    background-image: url(/img/plus.png);
+    background-image: url(img/plus.png);
 }
 
 .feedback i{
